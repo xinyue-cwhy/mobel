@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flexible.js+cssrem+rem</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/snindex.css">
   <script src="js/index.js"></script>
@@ -37,7 +38,24 @@
   <!-- 轮播图 -->
   <div class="banner">
     <div class="swiper">
-      <img src="upload/swiper1.jpg" alt="">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="upload/swiper1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="upload/swiper.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="upload/swipper3.png" alt="">
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </div>
   <!--  -->
@@ -79,6 +97,23 @@
       <img src="upload/imgfloor3.gif" alt="">
     </span>
   </div>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 
 </html>
