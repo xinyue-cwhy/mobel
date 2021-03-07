@@ -1,3 +1,11 @@
+@media screen and (min-width:750px){
+  html{
+    font-size: 75px!important;
+  }
+}
+li{
+  list-style: none;
+}
 body{
   min-width: 320px;
   max-width: 750px;
@@ -5,4 +13,169 @@ body{
   margin: 0 auto;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  width: 10rem;
+  height: 2.4rem;
+  background: -webkit-linear-gradient(#fe8691,#fe8a95);
+  overflow: hidden;
+}
+header .headeritem{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 9.093333rem;
+  height: 1.173333rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headeritem span{
+  display: inline-block;
+  width: .48rem;
+  height: .8rem;
+}
+header .headeritem span img{
+  width: .48rem;
+  height: .8rem;
+}
+header .headeritem .img{
+  width: 7.6rem;
+  height: 1.173333rem;
+  text-align: center;
+}
+header .headeritem .img img{
+  width: 5.2rem;
+  height: 1.013333rem;
+}
+ /* 搜索框 */
+header .search{
+  position: relative;
+  width: 9.36rem;
+  height: 1.173333rem;
+  margin: 0 auto;
+  margin-top: 1.173333rem;
+  box-sizing: border-box;
+}
+header .search a{
+  position: absolute;
+  top: .253333rem;
+  left: 0;
+  display: block;
+  border-radius: 60px;
+  overflow: hidden;
+}
+header .search a .searchitem{
+  position: relative;
+  width: 9.36rem;
+  height: .853333rem;
+  border:0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+header .search a .searchitem i{
+  position: absolute;
+  top: .2rem;
+  left: .293333rem;
+  width: .48rem;
+  height: .48rem;
+  background: url(../img/searchico.png) no-repeat ;
+  background-size: .48rem;
+}
+header .search a .searchitem .search_text{
+  color: #ccc;
+  box-sizing: border-box;
+  margin-left: .96rem;
+  font-size: .4rem;
+  line-height: .853333rem;
+}
+.banner{
+  width: 10rem;
+  height: 3.053333rem;
+  background: linear-gradient(#fe8a95,#fcc5ca);
+}
+.banner .swiper{
+  width: 9.36rem;
+  height: 3.053333rem;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.banner .swiper img{
+  width: 9.36rem;
+  height: 3.053333rem;
+}
+
+.main-box{
+  display: flex;
+  width: 10rem;
+  height: 3.743333rem;
+}
+.main-box span{
+  width: 3.333333rem;
+  height: 3.743333rem;
+}
+.main-box span img{
+  width: 3.333333rem;
+  height: 3.743333rem;
+}
+
+.enterwrapper{
+  width: 10rem;
+  height: 4.106667rem;
+  background: linear-gradient(#f9f9f9,#fff);
+}
+.enterwrapper ul{ 
+  margin: 0; 
+  width: 10rem;
+  height: 4.106667rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.enterwrapper ul li{
+  width: 2rem;
+  height: 1.893333rem;
+}
+.enterwrapper ul li a{
+  display: flex;
+  width: 2rem;
+  height: 1.893333rem;
+  flex-direction: column;
+  font-size: .32rem;
+  justify-content: center;
+  align-items: center;
+}
+.enterwrapper ul li a img{
+  width: 1.12rem;
+  height: 1.12rem;
+}
+.enterwrapper ul li a span{
+  width: 2rem;
+  height: .373333rem;
+  text-align: center;
+  color: #6f6f6f;
+}
+
+.imgfloor{
+  display: flex;
+  margin-top: 20px;
+  width: 10rem;
+  height: 3.12rem;
+}
+.imgfloor span{
+  flex: 1;
+}
+.imgfloor span:first-child{
+  flex: 2;
+}
+.imgfloor span img{
+  width: 2.483333rem;
+  height: 3.12rem;
+}
+.imgfloor span:first-child img{
+  width: 4.98rem;
+  height: 3.12rem;
 }
