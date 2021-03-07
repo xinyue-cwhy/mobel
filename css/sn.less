@@ -1,0 +1,179 @@
+@import "comment";
+body{
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li{
+  list-style: none;
+}
+// 头部
+@modelnum:50;
+header{
+  width: 15rem;
+  height: (180rem/@modelnum);
+  background: -webkit-linear-gradient(#fe8691,#fe8a95);
+  overflow: hidden;
+}
+header .headeritem{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: (682rem/@modelnum);
+  height: (88rem/@modelnum);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headeritem span{
+  display: inline-block;
+  width: (36rem/@modelnum);
+  height: (60rem/@modelnum);
+}
+header .headeritem span img{
+  width: (36rem/@modelnum);
+  height: (60rem/@modelnum);
+}
+header .headeritem .img{
+  width: (570rem/@modelnum);
+  height: (88rem/@modelnum);
+  text-align: center;
+}
+header .headeritem .img img{
+  width: (390rem/@modelnum);
+  height: (76rem/@modelnum);
+}
+// 搜索框
+header .search{
+  position: relative;
+  width: (702rem/@modelnum);
+  height: (88rem/@modelnum);
+  margin: 0 auto;
+  margin-top: (88rem/@modelnum);
+  box-sizing: border-box;
+}
+header .search a{
+  position: absolute;
+  top: (19rem/@modelnum);
+  left: 0;
+  display: block;
+  border-radius: 60px;
+  overflow: hidden;
+}
+header .search a .searchitem{
+  position: relative;
+  width: (702rem/@modelnum);
+  height: (64rem/@modelnum);
+  border:0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+header .search a .searchitem i{
+  position: absolute;
+  top: (15rem/@modelnum);
+  left: (22rem/@modelnum);
+  width: (36rem/@modelnum);
+  height: (36rem/@modelnum);
+  background: url(../img/searchico.png) no-repeat ;
+  background-size: (36rem/@modelnum);
+}
+header .search a .searchitem .search_text{
+  color: #ccc;
+  box-sizing: border-box;
+  margin-left: (72rem/@modelnum);
+  font-size: (30rem/@modelnum);
+  line-height: (64rem/@modelnum);
+}
+// 轮播图
+.banner{
+  width: (750rem/@modelnum);
+  height: (229rem/@modelnum);
+  background: linear-gradient(#fe8a95,#fcc5ca);
+}
+.banner .swiper{
+  width: (702rem/@modelnum);
+  height: (229rem/@modelnum);
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.banner .swiper img{
+  width: (702rem/@modelnum);
+  height: (229rem/@modelnum);
+}
+// 
+.main-box{
+  display: flex;
+  width: (750rem/@modelnum);
+  height: (280.75rem/@modelnum);
+}
+.main-box span{
+  width: (250rem/@modelnum);
+  height: (280.75rem/@modelnum);
+}
+.main-box span img{
+  width: (250rem/@modelnum);
+  height: (280.75rem/@modelnum);
+}
+//
+.enterwrapper{
+  width: (750rem/@modelnum);
+  height: (308rem/@modelnum);
+  background: linear-gradient(#f9f9f9,#fff);
+}
+.enterwrapper ul{ 
+  margin: 0; 
+  width: (750rem/@modelnum);
+  height: (308rem/@modelnum);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.enterwrapper ul li{
+  width: (150rem/@modelnum);
+  height: (142rem/@modelnum);
+}
+.enterwrapper ul li a{
+  display: flex;
+  width: (150rem/@modelnum);
+  height: (142rem/@modelnum);
+  flex-direction: column;
+  font-size: (24rem/@modelnum);
+  justify-content: center;
+  align-items: center;
+}
+.enterwrapper ul li a img{
+  width: (84rem/@modelnum);
+  height: (84rem/@modelnum);
+}
+.enterwrapper ul li a span{
+  width: (150rem/@modelnum);
+  height: (28rem/@modelnum);
+  text-align: center;
+  color: #6f6f6f;
+}
+// 
+.imgfloor{
+  display: flex;
+  margin-top: 20px;
+  width: (750rem/@modelnum);
+  height: (234rem/@modelnum);
+}
+.imgfloor span{
+  flex: 1;
+}
+.imgfloor span:first-child{
+  flex: 2;
+}
+.imgfloor span img{
+  width: (186.25rem/@modelnum);
+  height: (234rem/@modelnum);
+}
+.imgfloor span:first-child img{
+  width: (373.5rem/@modelnum);
+  height: (234rem/@modelnum);
+}

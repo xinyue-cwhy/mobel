@@ -1,0 +1,143 @@
+body{
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: #666;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+/* 导航栏 */
+.app{
+  height: 45px;
+}
+.app ul li{
+  float: left;
+  height: 45px;
+  background-color: #333;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+.app ul li:first-child{
+  width: 8%;
+}
+.app ul li:first-child img{
+  width: 10px;
+}
+.app ul li:nth-child(2){
+  width: 10%;
+}
+.app ul li:nth-child(2) img{
+  width: 30px;
+  vertical-align: middle;
+}
+.app ul li:nth-child(3){
+  width: 57%;
+}
+.app ul li:last-child{
+  width: 25%;
+  background-color: #f63515;
+}
+/* 搜索 */
+.search_box{
+  position: fixed;
+  height: 44px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 320px;
+  max-width: 620px;
+}
+.search_box .search-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  background: url(../img/index.png)no-repeat center;
+  background-size: 20px 18px;
+}
+.search_box .search-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+}
+.search_box .search{
+  position: relative;
+  height: 30px;
+  margin: 0 50px;
+  margin-top: 7px;
+  background-color: rgb(209, 241, 245);
+  border-radius: 15px;
+}
+.search_box .search .jd-ico{
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 15px;
+  margin: 8px 8px 0 15px;
+  background:url(../img/jdico.png)no-repeat;
+  background-size: 20px 15px;
+}
+.search_box .search .jd-ico::after{
+  content: '';
+  position: absolute;
+  left: 26px;
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #ccc;
+}
+.search_box .search .search_ico{
+  position: absolute;
+  top: 8px;
+  left: 47px;
+  width: 18px;
+  height: 15px;
+  background: url(../img/jd-sprites.png)no-repeat -80px 0;
+  background-size: 200px auto;
+}
+.search_box .search i{
+  position: absolute;
+  top: 4px;
+  left:84px;
+  color:#a09697;
+}
+/* main开始 */
+.main .focus_box img{
+  width: 100%;
+}
+.main .jdshop{
+  width: 100%;
+}
+.main .jdshop a{
+  width: 20%;
+  text-align: center;
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+.main .jdshop a img{
+  width: 2rem;
+  margin-top: .5rem;
+  vertical-align: top;
+}
+.main .jdshop a span{
+  display: block;
+  margin-top: .3rem;
+  font-size: 12px;
+  color: #666;
+}
